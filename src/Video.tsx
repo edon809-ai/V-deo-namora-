@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
-import { TIMINGS, TRANSITION } from "./timing";
+import { SCHEDULE, TRANSITION } from "./schedule";
 import { loadFonts } from "./fonts";
 
 import { Scene1 } from "./scenes/Scene1";
@@ -30,7 +30,7 @@ export const NossaHistoria: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: "#ffe9f2" }}>
       <TransitionSeries>
         {SCENES.map((Scene, i) => {
-          const t = TIMINGS[i];
+          const t = SCHEDULE[i];
           const nodes: React.ReactNode[] = [
             <TransitionSeries.Sequence key={`s${i}`} durationInFrames={t.durationInFrames}>
               <Scene />

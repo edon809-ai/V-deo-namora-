@@ -1,32 +1,28 @@
 {
-  "durations": {
-    "1": 6.384,
-    "2": 10.488,
-    "3": 12.816,
-    "4": 4.92,
-    "5": 5.76,
-    "6": 6.384,
-    "7": 3.528,
-    "8": 5.688,
-    "9": 3.384,
-    "10": 5.832,
-    "11": 2.736,
-    "12": 10.2,
-    "13": 4.656
+  "narrationDur": {
+    "1": 5.472,
+    "2": 9.12,
+    "3": 10.992,
+    "4": 4.2,
+    "5": 4.944,
+    "6": 5.472,
+    "7": 3.12,
+    "8": 4.872,
+    "9": 2.904,
+    "10": 4.992,
+    "11": 2.352,
+    "12": 8.88,
+    "13": 4.104
   },
-  "narration": {
-    "1": "Toda história de amor tem um começo. Mas a nossa começou de um jeito que ninguém imaginaria.",
-    "2": "Em 2024, o Rio Grande do Sul enfrentou uma das maiores tragédias da sua história. O Aeroporto de Porto Alegre precisava ser reconstruído.",
-    "3": "Ele, um paulista da construção civil. Ela, uma gaúcha que encontrou ali uma nova oportunidade. Enquanto tanta coisa era reconstruída, algo novo começava a ser construído: a nossa história.",
-    "4": "Todo dia, uma mensagem. Até que ela resolveu dar uma chance.",
-    "5": "Ele não sabia quem era Mufasa, mas estava começando a conhecer alguém muito especial.",
-    "6": "Vieram a praia, Gramado, viagens e risadas. Sem pressa, fomos nos aproximando.",
-    "7": "A obra terminou, e veio a distância.",
-    "8": "Mas a vida tinha outros planos. Ela foi promovida... e ia para São Paulo!",
-    "9": "E a insistência do começo voltou com tudo.",
-    "10": "Desde então, quase não houve um dia sem se ver. Foram se conhecendo de verdade.",
-    "11": "Até que ele deu um passo a mais.",
-    "12": "Hoje são quase dois anos de história, um de namoro. E tudo começou com um simples, oi, tudo bem? E uma pergunta inesquecível: quem é Mufasa?",
-    "13": "Essa não é uma história que chegou ao fim. É só o começo."
+  "dialogDur": {
+    "d4_1": 2.544,
+    "d5_1": 2.208,
+    "d5_2": 1.872,
+    "d5_3": 3.24,
+    "d7_1": 2.16,
+    "d7_2": 1.872,
+    "d9_1": 2.304,
+    "d11_1": 1.992,
+    "d11_2": 1.992
   }
 }

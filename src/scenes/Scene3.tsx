@@ -4,13 +4,13 @@ import { SceneBase } from "../components/SceneBase";
 import { Gradient, Ground, CloudRow } from "../components/Backgrounds";
 import { Heart, Sparkles } from "../components/Decor";
 import { Figure } from "../components/Stage";
-import { TIMINGS } from "../timing";
+import { getScene } from "../schedule";
 import { C, W, H } from "../theme";
 
 export const Scene3: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = TIMINGS.find((x) => x.index === 3)!;
+  const t = getScene(3);
   const narrEnd = t.narrationDelay + t.narrationDur;
   const heartPop = spring({ frame: frame - (narrEnd - 40), fps, config: { damping: 10, stiffness: 140 } });
   const inEla = interpolate(frame, [6, 30], [-400, 0], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });

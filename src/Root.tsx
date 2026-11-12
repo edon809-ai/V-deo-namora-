@@ -1,7 +1,7 @@
 import React from "react";
 import { Composition } from "remotion";
 import { NossaHistoria } from "./Video";
-import { TOTAL_FRAMES } from "./timing";
+import { TOTAL_FRAMES } from "./schedule";
 import { W, H, FPS } from "./theme";
 
 export const RemotionRoot: React.FC = () => {

@@ -4,22 +4,18 @@ import { SceneBase } from "../components/SceneBase";
 import { Gradient } from "../components/Backgrounds";
 import { FloatingHearts, Sparkles, Heart } from "../components/Decor";
 import { Figure } from "../components/Stage";
-import { SpeechBubble } from "../components/SpeechBubble";
-import { TIMINGS } from "../timing";
+import { getScene } from "../schedule";
 import { C, W, H } from "../theme";
 
 export const Scene11: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = TIMINGS.find((x) => x.index === 11)!;
-  const ne = t.narrationDelay + t.narrationDur;
-  const yesAt = ne + 170;
+  const yesAt = getScene(11).lines[1].start; // "Bah, claro que sim!"
   const burst = spring({ frame: frame - yesAt, fps, config: { damping: 9, stiffness: 120 } });
 
   return (
     <SceneBase index={11}>
       <Gradient from="#ffd9ea" to="#ffecd2" />
-      {/* brilho radial */}
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 42%, rgba(255,255,255,0.7), transparent 55%)" }} />
       <Sparkles count={22} seed="s11" area={{ x: 40, y: 200, w: 1000, h: 900 }} />
       <FloatingHearts count={16} seed="s11h" area={{ x: 0, y: 400, w: W, h: 1300 }} />
@@ -29,7 +25,6 @@ export const Scene11: React.FC = () => {
       <Figure who="ele" expression="love" cx={360} baseY={H - 220} width={360} kneel leftArm="reachR" rightArm="down" ring blush />
       <Figure who="ela" expression="love" cx={760} baseY={H - 220} width={330} flip leftArm="heartL" rightArm="heartR" />
 
-      {/* explosão de corações no "sim" */}
       {frame >= yesAt &&
         [0, 1, 2, 3, 4, 5].map((i) => {
           const a = (i / 6) * Math.PI * 2;
@@ -40,9 +35,6 @@ export const Scene11: React.FC = () => {
             </div>
           );
         })}
-
-      <SpeechBubble text="Quer namorar comigo? 💍" from={ne + 15} to={ne + 160} tail="left" style={{ left: 110, top: H - 1220 }} />
-      <SpeechBubble text="Bah, claro que sim! 🥰" from={yesAt} to={ne + 320} tail="right" color="#fff0f5" style={{ right: 110, top: H - 1160 }} />
     </SceneBase>
   );
 };

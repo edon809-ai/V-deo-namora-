@@ -5,13 +5,13 @@ import { Gradient, CloudRow } from "../components/Backgrounds";
 import { FloatingHearts, Sparkles, Heart } from "../components/Decor";
 import { Figure } from "../components/Stage";
 import { FONT } from "../fonts";
-import { TIMINGS } from "../timing";
+import { getScene } from "../schedule";
 import { C, H } from "../theme";
 
 export const Scene13: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = TIMINGS.find((x) => x.index === 13)!;
+  const t = getScene(13);
   const ne = t.narrationDelay + t.narrationDur;
   const card = spring({ frame: frame - (ne + 10), fps, config: { damping: 13, stiffness: 110 } });
   const heartBeat = 1 + Math.abs(Math.sin((frame / fps) * 3)) * 0.12;

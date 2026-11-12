@@ -1,0 +1,92 @@
+[
+  {
+    "family": "Fredoka",
+    "weight": 500,
+    "file": "Fredoka-500-latin-ext.woff2"
+  },
+  {
+    "family": "Fredoka",
+    "weight": 500,
+    "file": "Fredoka-500-latin.woff2"
+  },
+  {
+    "family": "Fredoka",
+    "weight": 600,
+    "file": "Fredoka-600-latin-ext.woff2"
+  },
+  {
+    "family": "Fredoka",
+    "weight": 600,
+    "file": "Fredoka-600-latin.woff2"
+  },
+  {
+    "family": "Fredoka",
+    "weight": 700,
+    "file": "Fredoka-700-latin-ext.woff2"
+  },
+  {
+    "family": "Fredoka",
+    "weight": 700,
+    "file": "Fredoka-700-latin.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 500,
+    "file": "Baloo2-500-latin-ext.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 500,
+    "file": "Baloo2-500-latin.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 600,
+    "file": "Baloo2-600-latin-ext.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 600,
+    "file": "Baloo2-600-latin.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 700,
+    "file": "Baloo2-700-latin-ext.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "weight": 700,
+    "file": "Baloo2-700-latin.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 600,
+    "file": "Nunito-600-latin-ext.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 600,
+    "file": "Nunito-600-latin.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 700,
+    "file": "Nunito-700-latin-ext.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 700,
+    "file": "Nunito-700-latin.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 800,
+    "file": "Nunito-800-latin-ext.woff2"
+  },
+  {
+    "family": "Nunito",
+    "weight": 800,
+    "file": "Nunito-800-latin.woff2"
+  }
+]
